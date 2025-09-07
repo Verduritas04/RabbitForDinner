@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://bdgioepfw488p"]
+
+[node name="Music" type="AudioStreamPlayer"]
+volume_db = -5.0

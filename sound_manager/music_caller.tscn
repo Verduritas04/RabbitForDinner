@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbapvclxlokh5"]
+
+[ext_resource type="Script" path="res://sound_manager/music_caller.gd" id="1_htm35"]
+
+[node name="MusicCaller" type="Node"]
+script = ExtResource("1_htm35")

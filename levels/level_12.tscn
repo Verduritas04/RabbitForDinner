@@ -1,0 +1,422 @@
+[gd_scene load_steps=11 format=3 uid="uid://cm6aklpdte53w"]
+
+[ext_resource type="PackedScene" uid="uid://biyhvtgjrspse" path="res://ground/ground_tiles.tscn" id="1_yw1qm"]
+[ext_resource type="PackedScene" uid="uid://djvma7pbm6m55" path="res://player/player.tscn" id="2_47whx"]
+[ext_resource type="PackedScene" uid="uid://rhj1h7qjyymn" path="res://vines/vine.tscn" id="2_tb3nw"]
+[ext_resource type="PackedScene" uid="uid://bsgui4rfjqg2v" path="res://cam/cam.tscn" id="3_7ddsm"]
+[ext_resource type="PackedScene" uid="uid://cq5glcdaqaeup" path="res://vines/vine_coll.tscn" id="3_h77hq"]
+[ext_resource type="PackedScene" uid="uid://ci3psavq3dfog" path="res://items/item.tscn" id="5_3yeer"]
+[ext_resource type="FontFile" uid="uid://ct55qup8ifk8j" path="res://fonts/scoreup.ttf" id="6_3sjl4"]
+[ext_resource type="PackedScene" uid="uid://b485cnqlmgmwx" path="res://level_end/level_end.tscn" id="7_sjwne"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iq5qs"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nxk5n"]
+size = Vector2(32, 96)
+
+[node name="level_12" type="Node2D"]
+texture_filter = 1
+
+[node name="GroundTiles" parent="." instance=ExtResource("1_yw1qm")]
+position = Vector2(0, 1350)
+layer_0/tile_data = PackedInt32Array(0, 0, 0, 65536, 0, 0, 131072, 0, 0, 196608, 0, 0, 262144, 0, 0, 327680, 0, 0, 393216, 0, 0, 458752, 0, 0, 524288, 0, 0, 589824, 0, 0, 655360, 0, 0, 720896, 0, 0, 786432, 0, 0, 851968, 0, 0, 917504, 0, 0, 983040, 0, 0, 1048576, 0, 0, 1, 0, 0, 65537, 0, 0, 131073, 0, 0, 196609, 0, 0, 262145, 0, 0, 327681, 0, 0, 393217, 0, 0, 458753, 0, 0, 524289, 0, 0, 589825, 0, 0, 655361, 0, 0, 720897, 0, 0, 786433, 0, 0, 851969, 0, 0, 917505, 0, 0, 983041, 0, 0, 1048577, 0, 0, 2, 0, 0, 65538, 0, 0, 131074, 0, 0, 196610, 0, 0, 262146, 0, 0, 327682, 0, 0, 393218, 0, 0, 458754, 0, 0, 524290, 0, 0, 589826, 0, 0, 655362, 0, 0, 720898, 0, 0, 786434, 0, 0, 851970, 0, 0, 917506, 0, 0, 983042, 0, 0, 1048578, 0, 0, 3, 0, 0, 65539, 0, 0, 131075, 0, 0, 196611, 0, 0, 262147, 0, 0, 327683, 0, 0, 393219, 0, 0, 458755, 0, 0, 524291, 0, 0, 589827, 0, 0, 655363, 0, 0, 720899, 0, 0, 786435, 0, 0, 851971, 0, 0, 917507, 0, 0, 983043, 0, 0, 1048579, 0, 0, 983044, 0, 0, 1048580, 0, 0, 983045, 0, 0, 1048581, 0, 0, 983046, 0, 0, 1048582, 0, 0, 983047, 0, 0, 1048583, 0, 0, 983048, 0, 0, 1048584, 0, 0, 983049, 0, 0, 1048585, 0, 0, 983050, 0, 0, 1048586, 0, 0, 983051, 0, 0, 1048587, 0, 0, 983052, 0, 0, 1048588, 0, 0, 983053, 0, 0, 1048589, 0, 0, 983054, 0, 0, 1048590, 0, 0, 983055, 0, 0, 1048591, 0, 0, 983056, 0, 0, 1048592, 0, 0, 983057, 0, 0, 1048593, 0, 0, 983058, 0, 0, 1048594, 0, 0, 983059, 0, 0, 1048595, 0, 0, 4, 0, 0, 65540, 0, 0, 131076, 0, 0, 5, 0, 0, 65541, 0, 0, 131077, 0, 0, 6, 0, 0, 65542, 0, 0, 131078, 0, 0, 7, 0, 0, 65543, 0, 0, 131079, 0, 0, 8, 0, 0, 65544, 0, 0, 131080, 0, 0, 9, 0, 0, 65545, 0, 0, 131081, 0, 0, 10, 0, 0, 65546, 0, 0, 131082, 0, 0, 11, 0, 0, 65547, 0, 0, 131083, 0, 0, 12, 0, 0, 65548, 0, 0, 131084, 0, 0, 13, 0, 0, 65549, 0, 0, 131085, 0, 0, 14, 0, 0, 65550, 0, 0, 131086, 0, 0, 15, 0, 0, 65551, 0, 0, 131087, 0, 0, 16, 0, 0, 65552, 0, 0, 131088, 0, 0, 17, 0, 0, 65553, 0, 0, 131089, 0, 0, 18, 0, 0, 65554, 0, 0, 131090, 0, 0, 19, 0, 0, 65555, 0, 0, 131091, 0, 0, 196612, 0, 0, 262148, 0, 0, 196613, 0, 0, 196614, 0, 0, 20, 0, 0, 65556, 0, 0, 131092, 0, 0, 21, 0, 0, 65557, 0, 0, 131093, 0, 0, 22, 0, 0, 65558, 0, 0, 131094, 0, 0, 23, 0, 0, 65559, 0, 0, 131095, 0, 0, 24, 0, 0, 65560, 0, 0, 131096, 0, 0, 983060, 0, 0, 1048596, 0, 0, 983061, 0, 0, 1048597, 0, 0, 983062, 0, 0, 1048598, 0, 0, 983063, 0, 0, 1048599, 0, 0, 983064, 0, 0, 1048600, 0, 0, 983065, 0, 0, 1048601, 0, 0, 983066, 0, 0, 1048602, 0, 0, 983067, 0, 0, 1048603, 0, 0, 983068, 0, 0, 1048604, 0, 0, 983069, 0, 0, 1048605, 0, 0, 983070, 0, 0, 1048606, 0, 0, 983071, 0, 0, 1048607, 0, 0, 983072, 0, 0, 1048608, 0, 0, 983073, 0, 0, 1048609, 0, 0, 983074, 0, 0, 1048610, 0, 0, 983075, 0, 0, 1048611, 0, 0, 983076, 0, 0, 1048612, 0, 0, 983077, 0, 0, 1048613, 0, 0, 983078, 0, 0, 1048614, 0, 0, 983079, 0, 0, 1048615, 0, 0, 917508, 0, 0, 917509, 0, 0, 917510, 0, 0, 917511, 0, 0, 917512, 0, 0, 917513, 0, 0, 917514, 0, 0, 917515, 0, 0, 917516, 0, 0, 917517, 0, 0, 917518, 65536, 0, 917519, 0, 0, 917520, 65536, 0, 917521, 65536, 0, 917522, 65536, 0, 917523, 65536, 0, 917524, 65536, 0, 917525, 65536, 0, 917526, 65536, 0, 917527, 65536, 0, 917528, 65536, 0, 917529, 65536, 0, 917530, 65536, 0, 917531, 0, 0, 917532, 0, 0, 917533, 0, 0, 917534, 0, 0, 917535, 65536, 0, 917536, 65536, 0, 917537, 0, 0, 917538, 0, 0, 917539, 0, 0, 917540, 0, 0, 917541, 0, 0, 917542, 0, 0, 917543, 0, 0, 35, 0, 0, 65571, 0, 0, 131107, 0, 0, 196643, 0, 0, 262179, 0, 0, 327715, 0, 0, 524323, 0, 0, 589859, 0, 0, 655395, 0, 0, 720931, 0, 0, 786467, 0, 0, 852003, 0, 0, 36, 0, 0, 65572, 0, 0, 131108, 0, 0, 196644, 0, 0, 262180, 0, 0, 327716, 0, 0, 393252, 0, 0, 524324, 0, 0, 589860, 0, 0, 655396, 0, 0, 720932, 0, 0, 786468, 0, 0, 852004, 0, 0, 37, 0, 0, 65573, 0, 0, 131109, 0, 0, 196645, 0, 0, 262181, 0, 0, 327717, 0, 0, 393253, 0, 0, 524325, 0, 0, 589861, 0, 0, 655397, 0, 0, 720933, 0, 0, 786469, 0, 0, 852005, 0, 0, 38, 0, 0, 65574, 0, 0, 131110, 0, 0, 196646, 0, 0, 262182, 0, 0, 327718, 0, 0, 393254, 0, 0, 524326, 0, 0, 589862, 0, 0, 655398, 0, 0, 720934, 0, 0, 786470, 0, 0, 852006, 0, 0, 39, 0, 0, 65575, 0, 0, 131111, 0, 0, 196647, 0, 0, 262183, 0, 0, 327719, 0, 0, 393255, 0, 0, 524327, 0, 0, 589863, 0, 0, 655399, 0, 0, 720935, 0, 0, 786471, 0, 0, 852007, 0, 0, 851995, 0, 0, 851996, 0, 0, 851997, 65536, 0, 851998, 65536, 0, 720929, 65536, 0, 720930, 65536, 0, 786465, 0, 0, 852001, 0, 0, 852002, 0, 0, 786466, 0, 0, -1114092, 0, 0, -1048556, 0, 0, -983020, 0, 0, -917484, 0, 0, -851948, 0, 0, -786412, 0, 0, -720876, 0, 0, -655340, 0, 0, -589804, 0, 0, -524268, 0, 0, -458732, 0, 0, -393196, 0, 0, -327660, 0, 0, -262124, 0, 0, -196588, 0, 0, -131052, 0, 0, -65516, 0, 0, -1114091, 0, 0, -1048555, 0, 0, -983019, 0, 0, -917483, 0, 0, -851947, 0, 0, -786411, 0, 0, -720875, 0, 0, -655339, 0, 0, -589803, 0, 0, -524267, 0, 0, -458731, 0, 0, -393195, 0, 0, -327659, 0, 0, -262123, 0, 0, -196587, 0, 0, -131051, 0, 0, -65515, 0, 0, -1114090, 0, 0, -1048554, 0, 0, -983018, 0, 0, -917482, 0, 0, -851946, 0, 0, -786410, 0, 0, -720874, 0, 0, -655338, 0, 0, -589802, 0, 0, -524266, 0, 0, -458730, 0, 0, -393194, 0, 0, -327658, 0, 0, -262122, 0, 0, -196586, 0, 0, -131050, 0, 0, -65514, 0, 0, -1114089, 0, 0, -1048553, 0, 0, -983017, 0, 0, -917481, 0, 0, -851945, 0, 0, -786409, 0, 0, -720873, 0, 0, -655337, 0, 0, -589801, 0, 0, -524265, 0, 0, -458729, 0, 0, -393193, 0, 0, -327657, 0, 0, -262121, 0, 0, -196585, 0, 0, -131049, 0, 0, -65513, 0, 0, -1114088, 0, 0, -1048552, 0, 0, -983016, 0, 0, -917480, 0, 0, -851944, 0, 0, -786408, 0, 0, -720872, 0, 0, -655336, 0, 0, -589800, 0, 0, -524264, 0, 0, -458728, 0, 0, -393192, 0, 0, -327656, 0, 0, -262120, 0, 0, -196584, 0, 0, -131048, 0, 0, -65512, 0, 0, -1114077, 0, 0, -1048541, 0, 0, -131037, 0, 0, -65501, 0, 0, -1114076, 0, 0, -1048540, 0, 0, -131036, 0, 0, -65500, 0, 0, -1114075, 0, 0, -1048539, 0, 0, -131035, 0, 0, -65499, 0, 0, -1114074, 0, 0, -1048538, 0, 0, -983002, 0, 0, -917466, 0, 0, -851930, 0, 0, -786394, 0, 0, -720858, 0, 0, -655322, 0, 0, -589786, 0, 0, -524250, 0, 0, -458714, 0, 0, -393178, 0, 0, -327642, 0, 0, -262106, 0, 0, -196570, 0, 0, -131034, 0, 0, -65498, 0, 0, -1114073, 0, 0, -1048537, 0, 0, -983001, 0, 0, -917465, 0, 0, -851929, 0, 0, -786393, 0, 0, -720857, 0, 0, -655321, 0, 0, -589785, 0, 0, -524249, 0, 0, -458713, 0, 0, -393177, 0, 0, -327641, 0, 0, -262105, 0, 0, -196569, 0, 0, -131033, 0, 0, -65497, 0, 0, -393184, 131072, 0, -393185, 131072, 0, -393186, 131072, 0, -327650, 0, 0, -327649, 0, 0, -327648, 0, 0, -262114, 0, 0, -524260, 131072, 0, -786407, 0, 0, -1048550, 0, 0, -1114086, 0, 0, -1114087, 0, 0, -1048551, 0, 0, -983015, 0, 0, -917479, 0, 0, -851943, 0, 0, 655387, 65536, 0, 655388, 65536, 0, 786460, 0, 0, 720924, 0, 0, 720923, 0, 0, 786459, 0, 0, -1245164, 0, 0, -1179628, 0, 0, -1245163, 0, 0, -1179627, 0, 0, -1245162, 0, 0, -1179626, 0, 0, -1245161, 0, 0, -1179625, 0, 0, -1245160, 0, 0, -1179624, 0, 0, -1245159, 0, 0, -1179623, 0, 0, -1245158, 0, 0, -1179622, 0, 0, -2162668, 0, 0, -2097132, 0, 0, -2031596, 0, 0, -1966060, 0, 0, -1900524, 0, 0, -1834988, 0, 0, -1769452, 0, 0, -1703916, 0, 0, -1638380, 0, 0, -1572844, 0, 0, -1507308, 0, 0, -1441772, 0, 0, -1376236, 0, 0, -1310700, 0, 0, -2162667, 0, 0, -2097131, 0, 0, -2031595, 0, 0, -1966059, 0, 0, -1900523, 0, 0, -1834987, 0, 0, -1769451, 0, 0, -1703915, 0, 0, -1638379, 0, 0, -1572843, 0, 0, -1507307, 0, 0, -1441771, 0, 0, -1376235, 0, 0, -1310699, 0, 0, -2162666, 0, 0, -2097130, 0, 0, -2031594, 0, 0, -1966058, 0, 0, -1900522, 0, 0, -1834986, 0, 0, -1769450, 0, 0, -1703914, 0, 0, -1638378, 0, 0, -1572842, 0, 0, -1507306, 0, 0, -2162665, 0, 0, -2097129, 0, 0, -2031593, 0, 0, -1966057, 0, 0, -1900521, 0, 0, -2162664, 0, 0, -2097128, 0, 0, -2031592, 0, 0, -1966056, 0, 0, -1900520, 0, 0, -1638376, 0, 0, -1572840, 0, 0, -1507304, 0, 0, -2162663, 0, 0, -2097127, 0, 0, -2031591, 0, 0, -1966055, 0, 0, -1900519, 0, 0, -1638375, 0, 0, -1572839, 0, 0, -1507303, 0, 0, -2162662, 0, 0, -2097126, 0, 0, -2031590, 0, 0, -1966054, 0, 0, -1900518, 0, 0, -1638374, 0, 0, -1572838, 0, 0, -1507302, 0, 0, -2162653, 0, 0, -2097117, 0, 0, -1834973, 131072, 0, -1572829, 0, 0, -1507293, 0, 0, -1441757, 0, 0, -1376221, 0, 0, -1310685, 0, 0, -1245149, 0, 0, -1179613, 0, 0, -1572828, 0, 0, -1507292, 0, 0, -1441756, 0, 0, -1376220, 0, 0, -1310684, 0, 0, -1245148, 0, 0, -1179612, 0, 0, -2162651, 0, 0, -2097115, 0, 0, -2031579, 0, 0, -1966043, 0, 0, -1900507, 0, 0, -1834971, 0, 0, -1769435, 0, 0, -1703899, 0, 0, -1638363, 0, 0, -1572827, 0, 0, -1507291, 0, 0, -1441755, 0, 0, -1376219, 0, 0, -1310683, 0, 0, -1245147, 0, 0, -1179611, 0, 0, -2162650, 0, 0, -2097114, 0, 0, -2031578, 0, 0, -1966042, 0, 0, -1900506, 0, 0, -1834970, 0, 0, -1769434, 0, 0, -1703898, 0, 0, -1638362, 0, 0, -1572826, 0, 0, -1507290, 0, 0, -1441754, 0, 0, -1376218, 0, 0, -1310682, 0, 0, -1245146, 0, 0, -1179610, 0, 0, -2162649, 0, 0, -2097113, 0, 0, -2031577, 0, 0, -1966041, 0, 0, -1900505, 0, 0, -1834969, 0, 0, -1769433, 0, 0, -1703897, 0, 0, -1638361, 0, 0, -1572825, 0, 0, -1507289, 0, 0, -1441753, 0, 0, -1376217, 0, 0, -1310681, 0, 0, -1245145, 0, 0, -1179609, 0, 0, -1441770, 0, 0, -1376234, 0, 0, -1310698, 0, 0, -2031581, 0, 0, -2097125, 0, 0, -2162661, 0, 0, -2162657, 0, 0, -2293723, 0, 0, -2293722, 0, 0, -2293721, 0, 0, -2293725, 0, 0, -2293729, 0, 0, -2293733, 0, 0, -2293734, 0, 0, -2293735, 0, 0, -2293736, 0, 0, -2293737, 0, 0, -2293738, 0, 0, -2293739, 0, 0, -2293740, 0, 0, -2228197, 0, 0, -2228198, 0, 0, -2228199, 0, 0, -2228200, 0, 0, -2228201, 0, 0, -2228202, 0, 0, -2228203, 0, 0, -2228193, 0, 0, -2228204, 0, 0, -2228189, 0, 0, -2228187, 0, 0, -2228186, 0, 0, -2228185, 0, 0, -2359259, 65536, 0, -2359258, 65536, 0, -2359257, 65536, 0, -2359261, 65536, 0, -2359265, 65536, 0, -2359269, 65536, 0, -2359270, 65536, 0, -2359271, 65536, 0, -2359272, 65536, 0, -2359273, 0, 0, -2359274, 0, 0, -2359275, 0, 0, -2359276, 0, 0, -3342320, 0, 0, -3276784, 0, 0, -3211248, 0, 0, -3145712, 0, 0, -3080176, 0, 0, -3014640, 0, 0, -2949104, 0, 0, -2883568, 0, 0, -2818032, 0, 0, -2752496, 0, 0, -2686960, 0, 0, -2621424, 0, 0, -2555888, 0, 0, -2490352, 0, 0, -2424816, 0, 0, -2359280, 0, 0, -2293744, 0, 0, -3342319, 0, 0, -3276783, 0, 0, -3211247, 0, 0, -3145711, 0, 0, -3080175, 0, 0, -3014639, 0, 0, -2949103, 0, 0, -2883567, 0, 0, -2818031, 0, 0, -2752495, 0, 0, -2686959, 0, 0, -2621423, 0, 0, -2555887, 0, 0, -2490351, 0, 0, -2424815, 0, 0, -2359279, 0, 0, -2293743, 0, 0, -3342318, 0, 0, -3276782, 0, 0, -3211246, 0, 0, -3145710, 0, 0, -3080174, 0, 0, -3014638, 0, 0, -2949102, 0, 0, -2883566, 0, 0, -2818030, 0, 0, -2752494, 0, 0, -2686958, 0, 0, -2621422, 0, 0, -2555886, 0, 0, -2490350, 0, 0, -2424814, 0, 0, -2359278, 0, 0, -2293742, 0, 0, -3342317, 0, 0, -3276781, 0, 0, -3211245, 0, 0, -3145709, 0, 0, -3080173, 0, 0, -3014637, 0, 0, -2949101, 0, 0, -2883565, 0, 0, -2818029, 0, 0, -2752493, 0, 0, -2686957, 0, 0, -2621421, 0, 0, -2555885, 0, 0, -2490349, 0, 0, -2424813, 0, 0, -2359277, 0, 0, -2293741, 0, 0, 393251, 0, 0, 458787, 0, 0, 458788, 0, 0, 458789, 0, 0, 458790, 0, 0, 458791, 0, 0, -2359256, 65536, 0, -2293720, 0, 0, -2228184, 0, 0, -2162648, 0, 0, -2359255, 65536, 0, -2293719, 0, 0, -2228183, 0, 0, -2162647, 0, 0, -2359254, 65536, 0, -2293718, 0, 0, -2228182, 0, 0, -2162646, 0, 0, -2359253, 65536, 0, -2293717, 0, 0, -2228181, 0, 0, -2162645, 0, 0, -2359252, 0, 0, -2293716, 0, 0, -2228180, 0, 0, -2162644, 0, 0, -2359251, 0, 0, -2293715, 0, 0, -2228179, 0, 0, -2162643, 0, 0, -2359250, 0, 0, -2293714, 0, 0, -2228178, 0, 0, -2162642, 0, 0, -2359249, 0, 0, -2293713, 0, 0, -2228177, 0, 0, -2162641, 0, 0, -2359248, 0, 0, -2293712, 0, 0, -2228176, 0, 0, -2162640, 0, 0, -2359247, 0, 0, -2293711, 0, 0, -2228175, 0, 0, -2162639, 0, 0, -2359246, 0, 0, -2293710, 0, 0, -2228174, 0, 0, -2162638, 0, 0, -2359245, 0, 0, -2293709, 0, 0, -2228173, 0, 0, -2162637, 0, 0, -2359244, 0, 0, -2293708, 0, 0, -2228172, 0, 0, -2162636, 0, 0, -2359243, 0, 0, -2293707, 0, 0, -2228171, 0, 0, -2162635, 0, 0, -2359242, 0, 0, -2293706, 0, 0, -2228170, 0, 0, -2162634, 0, 0, -2359241, 0, 0, -2293705, 0, 0, -2228169, 0, 0, -2162633, 0, 0, -2359240, 0, 0, -2293704, 0, 0, -2228168, 0, 0, -2162632, 0, 0, -2359239, 0, 0, -2293703, 0, 0, -2228167, 0, 0, -2162631, 0, 0, -2359238, 0, 0, -2293702, 0, 0, -2228166, 0, 0, -2162630, 0, 0, -2359237, 0, 0, -2293701, 0, 0, -2228165, 0, 0, -2162629, 0, 0, -2555860, 65536, 0, -2490324, 0, 0, -2424788, 0, 0, -2555859, 65536, 0, -2490323, 0, 0, -2424787, 0, 0, -2555858, 65536, 0, -2490322, 0, 0, -2424786, 0, 0, -2555857, 65536, 0, -2490321, 0, 0, -2424785, 0, 0, -2555856, 65536, 0, -2490320, 0, 0, -2424784, 0, 0, -2555855, 65536, 0, -2490319, 0, 0, -2424783, 0, 0, -2555854, 65536, 0, -2490318, 0, 0, -2424782, 0, 0, -2555853, 65536, 0, -2490317, 0, 0, -2424781, 0, 0, -2555852, 65536, 0, -2490316, 0, 0, -2424780, 0, 0, -2555851, 0, 0, -2490315, 0, 0, -2424779, 0, 0, -2555850, 0, 0, -2490314, 0, 0, -2424778, 0, 0, -2686923, 65536, 0, -2621387, 0, 0, -2686922, 65536, 0, -2621386, 0, 0, -2686921, 65536, 0, -2621385, 0, 0, -2555849, 0, 0, -2490313, 0, 0, -2424777, 0, 0, -2686920, 65536, 0, -2621384, 0, 0, -2555848, 0, 0, -2490312, 0, 0, -2424776, 0, 0, -2686919, 65536, 0, -2621383, 0, 0, -2555847, 0, 0, -2490311, 0, 0, -2424775, 0, 0, -2686918, 65536, 0, -2621382, 0, 0, -2555846, 0, 0, -2490310, 0, 0, -2424774, 0, 0, -2686917, 65536, 0, -2621381, 0, 0, -2555845, 0, 0, -2490309, 0, 0, -2424773, 0, 0, -3342316, 0, 0, -3276780, 0, 0, -3211244, 0, 0, -3145708, 0, 0, -3080172, 0, 0, -3014636, 0, 0, -2949100, 0, 0, -2883564, 0, 0, -2818028, 0, 0, -2752492, 0, 0, -2686956, 0, 0, -2621420, 0, 0, -2555884, 0, 0, -2490348, 0, 0, -2424812, 0, 0, -3342315, 0, 0, -3276779, 0, 0, -3211243, 0, 0, -3145707, 0, 0, -3080171, 0, 0, -3014635, 0, 0, -2949099, 0, 0, -2883563, 0, 0, -2818027, 0, 0, -2752491, 0, 0, -2686955, 0, 0, -2621419, 0, 0, -2555883, 0, 0, -2490347, 0, 0, -2424811, 0, 0, -3342314, 0, 0, -3276778, 0, 0, -3211242, 0, 0, -3145706, 0, 0, -3080170, 0, 0, -3014634, 0, 0, -2949098, 0, 0, -2883562, 0, 0, -2818026, 0, 0, -2752490, 0, 0, -2686954, 0, 0, -2621418, 0, 0, -2555882, 0, 0, -2490346, 0, 0, -2424810, 0, 0, -3342313, 0, 0, -3276777, 0, 0, -3211241, 0, 0, -3145705, 0, 0, -3080169, 0, 0, -3014633, 0, 0, -2949097, 0, 0, -2883561, 0, 0, -2818025, 0, 0, -2752489, 0, 0, -2686953, 0, 0, -2621417, 0, 0, -2555881, 0, 0, -2490345, 0, 0, -2424809, 0, 0, -3342288, 0, 0, -3407824, 0, 0, -3407825, 0, 0, -3407826, 0, 0, -3407823, 0, 0, -3407822, 0, 0, -3473358, 0, 0, -3473359, 0, 0, -3473360, 0, 0, -3473361, 0, 0, -3473362, 0, 0, -3473363, 0, 0, -3473364, 0, 0, -3342287, 0, 0, -3342289, 0, 0, -2752459, 131072, 0, -2686916, 65536, 0, -2686915, 65536, 0, -2686914, 65536, 0, -2686913, 65536, 0, -2621380, 0, 0, -2555844, 0, 0, -2490308, 0, 0, -2424772, 0, 0, -2359236, 0, 0, -2293700, 0, 0, -2228164, 0, 0, -2162628, 0, 0, -2621379, 0, 0, -2555843, 0, 0, -2490307, 0, 0, -2424771, 0, 0, -2359235, 0, 0, -2293699, 0, 0, -2228163, 0, 0, -2162627, 0, 0, -2621378, 0, 0, -2555842, 0, 0, -2490306, 0, 0, -2424770, 0, 0, -2359234, 0, 0, -2293698, 0, 0, -2228162, 0, 0, -2162626, 0, 0, -2621377, 0, 0, -2555841, 0, 0, -2490305, 0, 0, -2424769, 0, 0, -2359233, 0, 0, -2293697, 0, 0, -2228161, 0, 0, -2162625, 0, 0, -2686912, 65536, 0, -2686911, 65536, 0, -2621376, 0, 0, -2555840, 0, 0, -2490304, 0, 0, -2424768, 0, 0, -2359232, 0, 0, -2293696, 0, 0, -2228160, 0, 0, -2162624, 0, 0, -2621375, 0, 0, -2555839, 0, 0, -2490303, 0, 0, -2424767, 0, 0, -2359231, 0, 0, -2293695, 0, 0, -2228159, 0, 0, -2162623, 0, 0, -2490302, 65536, 0, -2424766, 0, 0, -2359230, 0, 0, -2293694, 0, 0, -2228158, 0, 0, -2162622, 0, 0, -2490301, 65536, 0, -2424765, 0, 0, -2359229, 0, 0, -2293693, 0, 0, -2228157, 0, 0, -2162621, 0, 0, -2490300, 65536, 0, -2424764, 0, 0, -2359228, 0, 0, -2293692, 0, 0, -2228156, 0, 0, -2162620, 0, 0, -2490299, 65536, 0, -2424763, 0, 0, -2359227, 0, 0, -2293691, 0, 0, -2228155, 0, 0, -2162619, 0, 0, -2490298, 0, 0, -2424762, 0, 0, -2359226, 0, 0, -2293690, 0, 0, -2228154, 0, 0, -2162618, 0, 0, -2490297, 65536, 0, -2424761, 0, 0, -2359225, 0, 0, -2293689, 0, 0, -2228153, 0, 0, -2162617, 0, 0, -2490296, 65536, 0, -2424760, 0, 0, -2359224, 0, 0, -2293688, 0, 0, -2228152, 0, 0, -2162616, 0, 0, -2490295, 0, 0, -2424759, 0, 0, -2359223, 0, 0, -2293687, 0, 0, -2228151, 0, 0, -2162615, 0, 0, -2490294, 65536, 0, -2424758, 0, 0, -2359222, 0, 0, -2293686, 0, 0, -2228150, 0, 0, -2162614, 0, 0, -2490293, 0, 0, -2424757, 0, 0, -2359221, 0, 0, -2293685, 0, 0, -2228149, 0, 0, -2162613, 0, 0, -2490292, 0, 0, -2424756, 0, 0, -2359220, 0, 0, -2293684, 0, 0, -2228148, 0, 0, -2162612, 0, 0, -2490291, 0, 0, -2424755, 0, 0, -2359219, 0, 0, -2293683, 0, 0, -2228147, 0, 0, -2162611, 0, 0, -2490290, 0, 0, -2424754, 0, 0, -2359218, 0, 0, -2293682, 0, 0, -2228146, 0, 0, -2162610, 0, 0, -2490289, 0, 0, -2424753, 0, 0, -2359217, 0, 0, -2293681, 0, 0, -2228145, 0, 0, -2162609, 0, 0, -3473347, 0, 0, -3407811, 0, 0, -3407810, 0, 0, -3407809, 0, 0, -3342273, 0, 0, -3342272, 0, 0, -3342271, 0, 0, -3276734, 0, 0, -3276733, 0, 0, -3276732, 0, 0, -3276731, 0, 0, -3211194, 0, 0, -3211193, 0, 0, -3211192, 0, 0, -3211191, 0, 0, -3276727, 0, 0, -3276726, 0, 0, -3276725, 0, 0, -3211189, 0, 0, -3211188, 0, 0, -3211187, 0, 0, -3211190, 0, 0, -3145657, 0, 0, -3145656, 0, 0, -3145655, 0, 0, -3080119, 0, 0, -3080118, 0, 0, -3080117, 0, 0, -3014580, 0, 0, -3014579, 0, 0, -2949043, 0, 0, -3014581, 0, 0, -3014582, 0, 0, -3014583, 0, 0, -3080120, 0, 0, -3080121, 0, 0, -3080122, 0, 0, -3145659, 0, 0, -3145660, 0, 0, -3211196, 0, 0, -3211197, 0, 0, -3276735, 0, 0, -3276736, 0, 0, -3211198, 0, 0, -3014584, 0, 0, -2949045, 0, 0, -2949044, 0, 0, -2949042, 0, 0, -2949041, 0, 0, -3014577, 0, 0, -3080114, 0, 0, -3080115, 0, 0, -3145651, 0, 0, -3145652, 0, 0, -3145653, 0, 0, -3145654, 0, 0, -3211195, 0, 0, -3342270, 0, 0, -3407806, 0, 0, -3407807, 0, 0, -3407808, 0, 0, -3473345, 0, 0, -3473346, 0, 0, -3473344, 0, 0, -3473343, 0, 0, -3473342, 0, 0, -3473341, 0, 0, -3473340, 0, 0, -3407803, 0, 0, -3407802, 0, 0, -3407801, 0, 0, -3407800, 0, 0, -3407799, 0, 0, -3407798, 0, 0, -3407797, 0, 0, -3407796, 0, 0, -3407795, 0, 0, -3407794, 0, 0, -3407793, 0, 0, -3473329, 0, 0, -3473330, 0, 0, -3473339, 0, 0, -3473338, 0, 0, -3473337, 0, 0, -3473336, 0, 0, -3473335, 0, 0, -3473334, 0, 0, -3473333, 0, 0, -3473332, 0, 0, -3473331, 0, 0, -3342257, 0, 0, -3276721, 0, 0, -3211185, 0, 0, -3145649, 0, 0, -3080113, 0, 0, -3145650, 0, 0, -3014578, 0, 0, -3080116, 0, 0, -3211186, 0, 0, -3276722, 0, 0, -3276723, 0, 0, -3342258, 0, 0, -3342259, 0, 0, -3342260, 0, 0, -3276724, 0, 0, -3342263, 0, 0, -3342264, 0, 0, -3342265, 0, 0, -3276729, 0, 0, -3276730, 0, 0, -3145658, 0, 0, -3342268, 0, 0, -3342269, 0, 0, -3407805, 0, 0, -3342267, 0, 0, -3407804, 0, 0, -3342266, 0, 0, -3276728, 0, 0, -3342262, 0, 0, -3342261, 0, 0, -2555838, 131072, 0, -3473328, 0, 0, -3407792, 0, 0, -3342256, 0, 0, -3276720, 0, 0, -3211184, 0, 0, -3145648, 0, 0, -3080112, 0, 0, -3014576, 0, 0, -2949040, 0, 0, -2883504, 0, 0, -2817968, 0, 0, -2752432, 0, 0, -2686896, 0, 0, -2621360, 0, 0, -2555824, 0, 0, -2490288, 0, 0, -2424752, 0, 0, -2359216, 0, 0, -2293680, 0, 0, -2228144, 0, 0, -2162608, 0, 0, -3473327, 0, 0, -3407791, 0, 0, -3342255, 0, 0, -3276719, 0, 0, -3211183, 0, 0, -3145647, 0, 0, -3080111, 0, 0, -3014575, 0, 0, -2949039, 0, 0, -2883503, 0, 0, -2817967, 0, 0, -2752431, 0, 0, -2686895, 0, 0, -2621359, 0, 0, -2555823, 0, 0, -2490287, 0, 0, -2424751, 0, 0, -2359215, 0, 0, -2293679, 0, 0, -2228143, 0, 0, -2162607, 0, 0, -3473326, 0, 0, -3407790, 0, 0, -3342254, 0, 0, -3276718, 0, 0, -3211182, 0, 0, -3145646, 0, 0, -3080110, 0, 0, -3014574, 0, 0, -2949038, 0, 0, -2883502, 0, 0, -2817966, 0, 0, -2752430, 0, 0, -2686894, 0, 0, -2621358, 0, 0, -2555822, 0, 0, -2490286, 0, 0, -2424750, 0, 0, -2359214, 0, 0, -2293678, 0, 0, -2228142, 0, 0, -2162606, 0, 0, -3473325, 0, 0, -3407789, 0, 0, -3342253, 0, 0, -3276717, 0, 0, -3211181, 0, 0, -3145645, 0, 0, -3080109, 0, 0, -3014573, 0, 0, -2949037, 0, 0, -2883501, 0, 0, -2817965, 0, 0, -2752429, 0, 0, -2686893, 0, 0, -2621357, 0, 0, -2555821, 0, 0, -2490285, 0, 0, -2424749, 0, 0, -2359213, 0, 0, -2293677, 0, 0, -2228141, 0, 0, -2162605, 0, 0)
+
+[node name="Vine" parent="." instance=ExtResource("2_tb3nw")]
+position = Vector2(0, 1350)
+
+[node name="VineColl" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(504, -56)
+
+[node name="VineColl2" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(504, -40)
+
+[node name="VineColl3" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(504, -24)
+
+[node name="VineColl4" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(504, -8)
+
+[node name="VineColl5" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(504, 8)
+
+[node name="VineColl6" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(504, 24)
+
+[node name="VineColl7" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(504, 40)
+
+[node name="VineColl8" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(504, 56)
+
+[node name="VineColl9" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(504, 72)
+
+[node name="VineColl10" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(504, 88)
+
+[node name="VineColl11" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(504, 104)
+
+[node name="VineColl12" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(504, 120)
+
+[node name="VineColl13" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(504, 136)
+
+[node name="VineColl24" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(424, 136)
+
+[node name="VineColl25" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(424, 152)
+
+[node name="VineColl26" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(424, 168)
+
+[node name="VineColl27" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(424, 184)
+
+[node name="VineColl28" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(424, 200)
+
+[node name="VineColl29" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(424, 216)
+
+[node name="VineColl14" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(600, -232)
+
+[node name="VineColl15" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(600, -216)
+
+[node name="VineColl16" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(600, -200)
+
+[node name="VineColl17" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(600, -184)
+
+[node name="VineColl18" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(600, -168)
+
+[node name="VineColl19" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(600, -152)
+
+[node name="VineColl30" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(424, -168)
+
+[node name="VineColl42" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(424, -200)
+
+[node name="VineColl43" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(424, -184)
+
+[node name="VineColl44" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(424, -232)
+
+[node name="VineColl45" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(424, -216)
+
+[node name="VineColl31" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(424, -152)
+
+[node name="VineColl32" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(424, -136)
+
+[node name="VineColl33" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(424, -120)
+
+[node name="VineColl34" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(424, -104)
+
+[node name="VineColl35" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(424, -88)
+
+[node name="VineColl36" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(504, -264)
+
+[node name="VineColl47" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(504, -280)
+
+[node name="VineColl53" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(504, -296)
+
+[node name="VineColl37" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(504, -248)
+
+[node name="VineColl38" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(504, -232)
+
+[node name="VineColl39" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(504, -216)
+
+[node name="VineColl54" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(376, -360)
+
+[node name="VineColl55" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(376, -376)
+
+[node name="VineColl58" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(376, -392)
+
+[node name="VineColl59" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(376, -344)
+
+[node name="VineColl60" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(376, -328)
+
+[node name="VineColl61" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(376, -312)
+
+[node name="VineColl62" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(584, -440)
+
+[node name="VineColl63" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(584, -456)
+
+[node name="VineColl64" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(584, -472)
+
+[node name="VineColl74" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(584, -488)
+
+[node name="VineColl75" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(584, -504)
+
+[node name="VineColl76" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(584, -520)
+
+[node name="VineColl79" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(584, -536)
+
+[node name="VineColl80" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(584, -552)
+
+[node name="VineColl81" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(584, -568)
+
+[node name="VineColl82" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(584, -584)
+
+[node name="VineColl83" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(696, -584)
+
+[node name="VineColl84" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(696, -600)
+
+[node name="VineColl85" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(696, -616)
+
+[node name="VineColl86" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(696, -632)
+
+[node name="VineColl87" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(696, -648)
+
+[node name="VineColl88" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(696, -664)
+
+[node name="VineColl89" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(696, -680)
+
+[node name="VineColl90" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(696, -696)
+
+[node name="VineColl91" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(776, -696)
+
+[node name="VineColl92" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(776, -712)
+
+[node name="VineColl93" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(776, -728)
+
+[node name="VineColl94" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(776, -744)
+
+[node name="VineColl95" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(776, -760)
+
+[node name="VineColl96" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(776, -776)
+
+[node name="VineColl97" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(776, -792)
+
+[node name="VineColl65" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(584, -424)
+
+[node name="VineColl66" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(584, -408)
+
+[node name="VineColl67" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(584, -392)
+
+[node name="VineColl68" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(440, -488)
+
+[node name="VineColl71" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(440, -472)
+
+[node name="VineColl72" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(440, -456)
+
+[node name="VineColl73" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(440, -440)
+
+[node name="VineColl69" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(504, -504)
+
+[node name="VineColl77" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(504, -488)
+
+[node name="VineColl78" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(504, -472)
+
+[node name="VineColl40" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(136, 56)
+
+[node name="VineColl41" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(136, 72)
+
+[node name="VineColl46" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(136, 88)
+
+[node name="VineColl48" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(184, 56)
+
+[node name="VineColl49" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(184, 72)
+
+[node name="VineColl50" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(184, 88)
+
+[node name="VineColl51" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(184, 104)
+
+[node name="VineColl52" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(184, 120)
+
+[node name="VineColl56" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(232, 56)
+
+[node name="VineColl57" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(232, 72)
+
+[node name="VineColl20" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(600, -136)
+
+[node name="VineColl21" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(600, -120)
+
+[node name="VineColl22" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(600, -104)
+
+[node name="VineColl23" parent="Vine" instance=ExtResource("3_h77hq")]
+position = Vector2(600, -88)
+
+[node name="Player" parent="." instance=ExtResource("2_47whx")]
+position = Vector2(128, 1542)
+metadata/_edit_group_ = true
+
+[node name="Label" parent="Player/Hud/Control" index="0"]
+text = "LEVEL 1 - 2"
+
+[node name="Items" type="Node2D" parent="."]
+position = Vector2(0, 1350)
+
+[node name="Item" parent="Items" instance=ExtResource("5_3yeer")]
+position = Vector2(432, 144)
+
+[node name="Item2" parent="Items" instance=ExtResource("5_3yeer")]
+position = Vector2(448, 144)
+
+[node name="Item3" parent="Items" instance=ExtResource("5_3yeer")]
+position = Vector2(528, 160)
+
+[node name="Item4" parent="Items" instance=ExtResource("5_3yeer")]
+position = Vector2(544, 160)
+
+[node name="Item5" parent="Items" instance=ExtResource("5_3yeer")]
+position = Vector2(480, -112)
+
+[node name="Item6" parent="Items" instance=ExtResource("5_3yeer")]
+position = Vector2(496, -112)
+
+[node name="Item7" parent="Items" instance=ExtResource("5_3yeer")]
+position = Vector2(512, -112)
+
+[node name="Item8" parent="Items" instance=ExtResource("5_3yeer")]
+position = Vector2(384, -416)
+
+[node name="Item10" parent="Items" instance=ExtResource("5_3yeer")]
+position = Vector2(400, -416)
+
+[node name="Item11" parent="Items" instance=ExtResource("5_3yeer")]
+position = Vector2(416, -416)
+
+[node name="Item12" parent="Items" instance=ExtResource("5_3yeer")]
+position = Vector2(496, -592)
+
+[node name="Item13" parent="Items" instance=ExtResource("5_3yeer")]
+position = Vector2(432, -592)
+
+[node name="Item14" parent="Items" instance=ExtResource("5_3yeer")]
+position = Vector2(416, -592)
+
+[node name="Item15" parent="Items" instance=ExtResource("5_3yeer")]
+position = Vector2(400, -592)
+
+[node name="Item23" parent="Items" instance=ExtResource("5_3yeer")]
+position = Vector2(384, -592)
+
+[node name="Item16" parent="Items" instance=ExtResource("5_3yeer")]
+position = Vector2(736, -720)
+
+[node name="Item20" parent="Items" instance=ExtResource("5_3yeer")]
+position = Vector2(768, -736)
+
+[node name="Item21" parent="Items" instance=ExtResource("5_3yeer")]
+position = Vector2(768, -752)
+
+[node name="Item22" parent="Items" instance=ExtResource("5_3yeer")]
+position = Vector2(768, -768)
+
+[node name="Item17" parent="Items" instance=ExtResource("5_3yeer")]
+position = Vector2(720, -720)
+
+[node name="Item18" parent="Items" instance=ExtResource("5_3yeer")]
+position = Vector2(816, -720)
+
+[node name="Item19" parent="Items" instance=ExtResource("5_3yeer")]
+position = Vector2(800, -720)
+
+[node name="Item9" parent="Items" instance=ExtResource("5_3yeer")]
+position = Vector2(560, -464)
+
+[node name="Cam" parent="." instance=ExtResource("3_7ddsm")]
+position = Vector2(160, 135)
+
+[node name="Dark" parent="Cam" index="0"]
+visible = false
+
+[node name="Label" type="Label" parent="."]
+offset_left = 352.0
+offset_top = 1590.0
+offset_right = 608.0
+offset_bottom = 1606.0
+theme_override_fonts/font = ExtResource("6_3sjl4")
+theme_override_font_sizes/font_size = 5
+theme_override_styles/normal = SubResource("StyleBoxFlat_iq5qs")
+text = " Vines let you jump forever"
+vertical_alignment = 1
+
+[node name="LevelEnd" parent="." instance=ExtResource("7_sjwne")]
+position = Vector2(1264, 694)
+chaneScene = "res://lores/lore_02.tscn"
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LevelEnd"]
+shape = SubResource("RectangleShape2D_nxk5n")
+
+[editable path="Player"]
+[editable path="Player/Hud"]
+[editable path="Cam"]

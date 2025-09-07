@@ -1,0 +1,80 @@
+[gd_scene load_steps=8 format=3 uid="uid://bus47w3yqlybl"]
+
+[ext_resource type="Script" path="res://hud/hud.gd" id="1_ee242"]
+[ext_resource type="Texture2D" uid="uid://c3c8j027ftf3v" path="res://hud/frame.png" id="1_osdlp"]
+[ext_resource type="Texture2D" uid="uid://tn6ddhqtvi3e" path="res://hud/health.png" id="2_ande6"]
+[ext_resource type="PackedScene" uid="uid://bh262lsdrsed1" path="res://items/item_slot.tscn" id="3_8f6d8"]
+[ext_resource type="FontFile" uid="uid://ct55qup8ifk8j" path="res://fonts/scoreup.ttf" id="4_m2f3p"]
+[ext_resource type="PackedScene" uid="uid://ppnbf8l018bo" path="res://hud/crom_ab.tscn" id="5_wsqwc"]
+
+[sub_resource type="Theme" id="Theme_qlsob"]
+default_font = ExtResource("4_m2f3p")
+default_font_size = 5
+
+[node name="Hud" type="CanvasLayer"]
+layer = 100
+script = ExtResource("1_ee242")
+
+[node name="Health" type="Sprite2D" parent="."]
+position = Vector2(40, 24)
+texture = ExtResource("2_ande6")
+hframes = 4
+
+[node name="Slots" type="Node2D" parent="."]
+
+[node name="ItemSlot" parent="Slots" instance=ExtResource("3_8f6d8")]
+position = Vector2(128, 16)
+
+[node name="ItemSlot2" parent="Slots" instance=ExtResource("3_8f6d8")]
+position = Vector2(144, 16)
+
+[node name="ItemSlot3" parent="Slots" instance=ExtResource("3_8f6d8")]
+position = Vector2(160, 16)
+
+[node name="ItemSlot4" parent="Slots" instance=ExtResource("3_8f6d8")]
+position = Vector2(176, 16)
+
+[node name="ItemSlot5" parent="Slots" instance=ExtResource("3_8f6d8")]
+position = Vector2(192, 16)
+
+[node name="ItemSlot6" parent="Slots" instance=ExtResource("3_8f6d8")]
+position = Vector2(208, 16)
+
+[node name="ItemSlot7" parent="Slots" instance=ExtResource("3_8f6d8")]
+position = Vector2(224, 16)
+
+[node name="ItemSlot8" parent="Slots" instance=ExtResource("3_8f6d8")]
+position = Vector2(240, 16)
+
+[node name="ItemSlot9" parent="Slots" instance=ExtResource("3_8f6d8")]
+position = Vector2(256, 16)
+
+[node name="ItemSlot10" parent="Slots" instance=ExtResource("3_8f6d8")]
+position = Vector2(272, 16)
+
+[node name="Frame" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.494118)
+texture = ExtResource("1_osdlp")
+centered = false
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 32.0
+offset_top = 16.0
+offset_right = 288.0
+offset_bottom = 256.0
+theme = SubResource("Theme_qlsob")
+metadata/_edit_lock_ = true
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 88.0
+offset_bottom = 16.0
+text = "LEVEL 1 - 1"
+vertical_alignment = 1
+
+[node name="CromAb" parent="Control" instance=ExtResource("5_wsqwc")]
+layout_mode = 0
+metadata/_edit_lock_ = true

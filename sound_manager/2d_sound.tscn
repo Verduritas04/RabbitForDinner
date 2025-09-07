@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b00dknunstirh"]
+
+[ext_resource type="Script" path="res://sound_manager/2d_sound.gd" id="1_tuoo4"]
+
+[node name="2DSound" type="AudioStreamPlayer2D"]
+area_mask = 65537
+script = ExtResource("1_tuoo4")
+
+[connection signal="finished" from="." to="." method="_on_finished"]

@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://ppnbf8l018bo"]
+
+[ext_resource type="Shader" path="res://hud/ChromAb.gdshader" id="1_6dstb"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_l2rw6"]
+shader = ExtResource("1_6dstb")
+shader_parameter/intensity = 0.5
+
+[node name="CromAb" type="ColorRect"]
+material = SubResource("ShaderMaterial_l2rw6")
+offset_right = 256.0
+offset_bottom = 240.0

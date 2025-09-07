@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=3 uid="uid://ci3psavq3dfog"]
+
+[ext_resource type="Texture2D" uid="uid://biwsa40ly8ogb" path="res://items/items.png" id="1_px3ua"]
+[ext_resource type="Script" path="res://items/item.gd" id="2_es10w"]
+
+[sub_resource type="Animation" id="Animation_kaas2"]
+resource_name = "Float"
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -3)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_t32gl"]
+_data = {
+"Float": SubResource("Animation_kaas2")
+}
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nrqqu"]
+radius = 6.0
+height = 16.0
+
+[node name="Item" type="Sprite2D"]
+texture = ExtResource("1_px3ua")
+centered = false
+hframes = 5
+script = ExtResource("2_es10w")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_t32gl")
+}
+autoplay = "Float"
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(8, 7)
+shape = SubResource("CapsuleShape2D_nrqqu")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

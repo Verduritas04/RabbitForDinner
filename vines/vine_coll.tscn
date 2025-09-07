@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cq5glcdaqaeup"]
+
+[ext_resource type="Texture2D" uid="uid://cn31gby8ughlp" path="res://vines/vine.png" id="1_8x0ri"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cfnvo"]
+size = Vector2(16, 16)
+
+[node name="VineColl" type="CollisionShape2D"]
+position = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_cfnvo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-8, -8)
+texture = ExtResource("1_8x0ri")
+centered = false

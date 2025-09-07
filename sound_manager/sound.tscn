@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://gcc8abpl8gnu"]
+
+[ext_resource type="Script" path="res://sound_manager/sound.gd" id="1_lkx22"]
+
+[node name="Sound" type="AudioStreamPlayer"]
+bus = &"Sfx"
+script = ExtResource("1_lkx22")
+
+[connection signal="finished" from="." to="." method="_on_finished"]

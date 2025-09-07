@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bh262lsdrsed1"]
+
+[ext_resource type="Script" path="res://items/item_slot.gd" id="1_o1o72"]
+[ext_resource type="Texture2D" uid="uid://biwsa40ly8ogb" path="res://items/items.png" id="1_vi775"]
+[ext_resource type="Texture2D" uid="uid://btfx4oqlqd2yb" path="res://hud/item_box.png" id="2_uuveb"]
+
+[node name="ItemSlot" type="Node2D"]
+script = ExtResource("1_o1o72")
+
+[node name="Item" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("1_vi775")
+centered = false
+hframes = 5
+frame = 2
+
+[node name="ItemBox" type="Sprite2D" parent="."]
+texture = ExtResource("2_uuveb")
+centered = false
+hframes = 2

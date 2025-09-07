@@ -1,0 +1,1448 @@
+[gd_scene load_steps=3 format=3 uid="uid://lugb8u6b3pq1"]
+
+[ext_resource type="Texture2D" uid="uid://bfyr18v7fny6h" path="res://dark/dark.png" id="1_qixh1"]
+[ext_resource type="Script" path="res://dark/dark.gd" id="1_wlyfa"]
+
+[node name="Dark" type="Node2D"]
+z_index = 5
+script = ExtResource("1_wlyfa")
+
+[node name="Sprite2D23" type="Sprite2D" parent="."]
+position = Vector2(40, 24)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D24" type="Sprite2D" parent="."]
+position = Vector2(56, 24)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D25" type="Sprite2D" parent="."]
+position = Vector2(72, 24)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D26" type="Sprite2D" parent="."]
+position = Vector2(88, 24)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D27" type="Sprite2D" parent="."]
+position = Vector2(104, 24)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D28" type="Sprite2D" parent="."]
+position = Vector2(120, 24)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D29" type="Sprite2D" parent="."]
+position = Vector2(136, 24)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D30" type="Sprite2D" parent="."]
+position = Vector2(152, 24)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D31" type="Sprite2D" parent="."]
+position = Vector2(168, 24)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D32" type="Sprite2D" parent="."]
+position = Vector2(184, 24)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D33" type="Sprite2D" parent="."]
+position = Vector2(200, 24)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D34" type="Sprite2D" parent="."]
+position = Vector2(216, 24)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D35" type="Sprite2D" parent="."]
+position = Vector2(232, 24)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D36" type="Sprite2D" parent="."]
+position = Vector2(248, 24)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D37" type="Sprite2D" parent="."]
+position = Vector2(264, 24)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D38" type="Sprite2D" parent="."]
+position = Vector2(280, 24)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D43" type="Sprite2D" parent="."]
+position = Vector2(40, 40)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D44" type="Sprite2D" parent="."]
+position = Vector2(56, 40)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D45" type="Sprite2D" parent="."]
+position = Vector2(72, 40)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D46" type="Sprite2D" parent="."]
+position = Vector2(88, 40)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D47" type="Sprite2D" parent="."]
+position = Vector2(104, 40)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D48" type="Sprite2D" parent="."]
+position = Vector2(120, 40)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D49" type="Sprite2D" parent="."]
+position = Vector2(136, 40)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D50" type="Sprite2D" parent="."]
+position = Vector2(152, 40)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D51" type="Sprite2D" parent="."]
+position = Vector2(168, 40)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D52" type="Sprite2D" parent="."]
+position = Vector2(184, 40)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D53" type="Sprite2D" parent="."]
+position = Vector2(200, 40)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D54" type="Sprite2D" parent="."]
+position = Vector2(216, 40)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D55" type="Sprite2D" parent="."]
+position = Vector2(232, 40)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D56" type="Sprite2D" parent="."]
+position = Vector2(248, 40)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D57" type="Sprite2D" parent="."]
+position = Vector2(264, 40)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D58" type="Sprite2D" parent="."]
+position = Vector2(280, 40)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D63" type="Sprite2D" parent="."]
+position = Vector2(40, 56)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D64" type="Sprite2D" parent="."]
+position = Vector2(56, 56)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D65" type="Sprite2D" parent="."]
+position = Vector2(72, 56)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D66" type="Sprite2D" parent="."]
+position = Vector2(88, 56)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D67" type="Sprite2D" parent="."]
+position = Vector2(104, 56)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D68" type="Sprite2D" parent="."]
+position = Vector2(120, 56)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D69" type="Sprite2D" parent="."]
+position = Vector2(136, 56)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D70" type="Sprite2D" parent="."]
+position = Vector2(152, 56)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D71" type="Sprite2D" parent="."]
+position = Vector2(168, 56)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D72" type="Sprite2D" parent="."]
+position = Vector2(184, 56)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D73" type="Sprite2D" parent="."]
+position = Vector2(200, 56)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D74" type="Sprite2D" parent="."]
+position = Vector2(216, 56)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D75" type="Sprite2D" parent="."]
+position = Vector2(232, 56)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D76" type="Sprite2D" parent="."]
+position = Vector2(248, 56)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D77" type="Sprite2D" parent="."]
+position = Vector2(264, 56)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D78" type="Sprite2D" parent="."]
+position = Vector2(280, 56)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D83" type="Sprite2D" parent="."]
+position = Vector2(40, 72)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D84" type="Sprite2D" parent="."]
+position = Vector2(56, 72)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D85" type="Sprite2D" parent="."]
+position = Vector2(72, 72)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D86" type="Sprite2D" parent="."]
+position = Vector2(88, 72)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D87" type="Sprite2D" parent="."]
+position = Vector2(104, 72)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D88" type="Sprite2D" parent="."]
+position = Vector2(120, 72)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D89" type="Sprite2D" parent="."]
+position = Vector2(136, 72)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D90" type="Sprite2D" parent="."]
+position = Vector2(152, 72)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D91" type="Sprite2D" parent="."]
+position = Vector2(168, 72)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D92" type="Sprite2D" parent="."]
+position = Vector2(184, 72)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D93" type="Sprite2D" parent="."]
+position = Vector2(200, 72)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D94" type="Sprite2D" parent="."]
+position = Vector2(216, 72)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D95" type="Sprite2D" parent="."]
+position = Vector2(232, 72)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D96" type="Sprite2D" parent="."]
+position = Vector2(248, 72)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D97" type="Sprite2D" parent="."]
+position = Vector2(264, 72)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D98" type="Sprite2D" parent="."]
+position = Vector2(280, 72)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D103" type="Sprite2D" parent="."]
+position = Vector2(40, 88)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D104" type="Sprite2D" parent="."]
+position = Vector2(56, 88)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D105" type="Sprite2D" parent="."]
+position = Vector2(72, 88)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D106" type="Sprite2D" parent="."]
+position = Vector2(88, 88)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D107" type="Sprite2D" parent="."]
+position = Vector2(104, 88)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D108" type="Sprite2D" parent="."]
+position = Vector2(120, 88)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D109" type="Sprite2D" parent="."]
+position = Vector2(136, 88)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D110" type="Sprite2D" parent="."]
+position = Vector2(152, 88)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D111" type="Sprite2D" parent="."]
+position = Vector2(168, 88)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D112" type="Sprite2D" parent="."]
+position = Vector2(184, 88)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D113" type="Sprite2D" parent="."]
+position = Vector2(200, 88)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D114" type="Sprite2D" parent="."]
+position = Vector2(216, 88)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D115" type="Sprite2D" parent="."]
+position = Vector2(232, 88)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D116" type="Sprite2D" parent="."]
+position = Vector2(248, 88)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D117" type="Sprite2D" parent="."]
+position = Vector2(264, 88)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D118" type="Sprite2D" parent="."]
+position = Vector2(280, 88)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D123" type="Sprite2D" parent="."]
+position = Vector2(40, 104)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D124" type="Sprite2D" parent="."]
+position = Vector2(56, 104)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D125" type="Sprite2D" parent="."]
+position = Vector2(72, 104)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D126" type="Sprite2D" parent="."]
+position = Vector2(88, 104)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D127" type="Sprite2D" parent="."]
+position = Vector2(104, 104)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D128" type="Sprite2D" parent="."]
+position = Vector2(120, 104)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D129" type="Sprite2D" parent="."]
+position = Vector2(136, 104)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D130" type="Sprite2D" parent="."]
+position = Vector2(152, 104)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D131" type="Sprite2D" parent="."]
+position = Vector2(168, 104)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D132" type="Sprite2D" parent="."]
+position = Vector2(184, 104)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D133" type="Sprite2D" parent="."]
+position = Vector2(200, 104)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D134" type="Sprite2D" parent="."]
+position = Vector2(216, 104)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D135" type="Sprite2D" parent="."]
+position = Vector2(232, 104)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D136" type="Sprite2D" parent="."]
+position = Vector2(248, 104)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D137" type="Sprite2D" parent="."]
+position = Vector2(264, 104)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D138" type="Sprite2D" parent="."]
+position = Vector2(280, 104)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D143" type="Sprite2D" parent="."]
+position = Vector2(40, 120)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D144" type="Sprite2D" parent="."]
+position = Vector2(56, 120)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D145" type="Sprite2D" parent="."]
+position = Vector2(72, 120)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D146" type="Sprite2D" parent="."]
+position = Vector2(88, 120)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D147" type="Sprite2D" parent="."]
+position = Vector2(104, 120)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D148" type="Sprite2D" parent="."]
+position = Vector2(120, 120)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D149" type="Sprite2D" parent="."]
+position = Vector2(136, 120)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D150" type="Sprite2D" parent="."]
+position = Vector2(152, 120)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D151" type="Sprite2D" parent="."]
+position = Vector2(168, 120)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D152" type="Sprite2D" parent="."]
+position = Vector2(184, 120)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D153" type="Sprite2D" parent="."]
+position = Vector2(200, 120)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D154" type="Sprite2D" parent="."]
+position = Vector2(216, 120)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D155" type="Sprite2D" parent="."]
+position = Vector2(232, 120)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D156" type="Sprite2D" parent="."]
+position = Vector2(248, 120)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D157" type="Sprite2D" parent="."]
+position = Vector2(264, 120)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D158" type="Sprite2D" parent="."]
+position = Vector2(280, 120)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D163" type="Sprite2D" parent="."]
+position = Vector2(40, 136)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D164" type="Sprite2D" parent="."]
+position = Vector2(56, 136)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D165" type="Sprite2D" parent="."]
+position = Vector2(72, 136)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D166" type="Sprite2D" parent="."]
+position = Vector2(88, 136)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D167" type="Sprite2D" parent="."]
+position = Vector2(104, 136)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D168" type="Sprite2D" parent="."]
+position = Vector2(120, 136)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D169" type="Sprite2D" parent="."]
+position = Vector2(136, 136)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D170" type="Sprite2D" parent="."]
+position = Vector2(152, 136)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D171" type="Sprite2D" parent="."]
+position = Vector2(168, 136)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D172" type="Sprite2D" parent="."]
+position = Vector2(184, 136)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D173" type="Sprite2D" parent="."]
+position = Vector2(200, 136)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D174" type="Sprite2D" parent="."]
+position = Vector2(216, 136)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D175" type="Sprite2D" parent="."]
+position = Vector2(232, 136)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D176" type="Sprite2D" parent="."]
+position = Vector2(248, 136)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D177" type="Sprite2D" parent="."]
+position = Vector2(264, 136)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D178" type="Sprite2D" parent="."]
+position = Vector2(280, 136)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D183" type="Sprite2D" parent="."]
+position = Vector2(40, 152)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D184" type="Sprite2D" parent="."]
+position = Vector2(56, 152)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D185" type="Sprite2D" parent="."]
+position = Vector2(72, 152)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D186" type="Sprite2D" parent="."]
+position = Vector2(88, 152)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D187" type="Sprite2D" parent="."]
+position = Vector2(104, 152)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D188" type="Sprite2D" parent="."]
+position = Vector2(120, 152)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D189" type="Sprite2D" parent="."]
+position = Vector2(136, 152)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D190" type="Sprite2D" parent="."]
+position = Vector2(152, 152)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D191" type="Sprite2D" parent="."]
+position = Vector2(168, 152)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D192" type="Sprite2D" parent="."]
+position = Vector2(184, 152)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D193" type="Sprite2D" parent="."]
+position = Vector2(200, 152)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D194" type="Sprite2D" parent="."]
+position = Vector2(216, 152)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D195" type="Sprite2D" parent="."]
+position = Vector2(232, 152)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D196" type="Sprite2D" parent="."]
+position = Vector2(248, 152)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D197" type="Sprite2D" parent="."]
+position = Vector2(264, 152)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D198" type="Sprite2D" parent="."]
+position = Vector2(280, 152)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D203" type="Sprite2D" parent="."]
+position = Vector2(40, 168)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D204" type="Sprite2D" parent="."]
+position = Vector2(56, 168)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D205" type="Sprite2D" parent="."]
+position = Vector2(72, 168)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D206" type="Sprite2D" parent="."]
+position = Vector2(88, 168)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D207" type="Sprite2D" parent="."]
+position = Vector2(104, 168)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D208" type="Sprite2D" parent="."]
+position = Vector2(120, 168)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D209" type="Sprite2D" parent="."]
+position = Vector2(136, 168)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D210" type="Sprite2D" parent="."]
+position = Vector2(152, 168)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D211" type="Sprite2D" parent="."]
+position = Vector2(168, 168)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D212" type="Sprite2D" parent="."]
+position = Vector2(184, 168)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D213" type="Sprite2D" parent="."]
+position = Vector2(200, 168)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D214" type="Sprite2D" parent="."]
+position = Vector2(216, 168)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D215" type="Sprite2D" parent="."]
+position = Vector2(232, 168)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D216" type="Sprite2D" parent="."]
+position = Vector2(248, 168)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D217" type="Sprite2D" parent="."]
+position = Vector2(264, 168)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D218" type="Sprite2D" parent="."]
+position = Vector2(280, 168)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D223" type="Sprite2D" parent="."]
+position = Vector2(40, 184)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D224" type="Sprite2D" parent="."]
+position = Vector2(56, 184)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D225" type="Sprite2D" parent="."]
+position = Vector2(72, 184)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D226" type="Sprite2D" parent="."]
+position = Vector2(88, 184)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D227" type="Sprite2D" parent="."]
+position = Vector2(104, 184)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D228" type="Sprite2D" parent="."]
+position = Vector2(120, 184)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D229" type="Sprite2D" parent="."]
+position = Vector2(136, 184)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D230" type="Sprite2D" parent="."]
+position = Vector2(152, 184)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D231" type="Sprite2D" parent="."]
+position = Vector2(168, 184)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D232" type="Sprite2D" parent="."]
+position = Vector2(184, 184)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D233" type="Sprite2D" parent="."]
+position = Vector2(200, 184)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D234" type="Sprite2D" parent="."]
+position = Vector2(216, 184)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D235" type="Sprite2D" parent="."]
+position = Vector2(232, 184)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D236" type="Sprite2D" parent="."]
+position = Vector2(248, 184)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D237" type="Sprite2D" parent="."]
+position = Vector2(264, 184)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D238" type="Sprite2D" parent="."]
+position = Vector2(280, 184)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D243" type="Sprite2D" parent="."]
+position = Vector2(40, 200)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D244" type="Sprite2D" parent="."]
+position = Vector2(56, 200)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D245" type="Sprite2D" parent="."]
+position = Vector2(72, 200)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D246" type="Sprite2D" parent="."]
+position = Vector2(88, 200)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D247" type="Sprite2D" parent="."]
+position = Vector2(104, 200)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D248" type="Sprite2D" parent="."]
+position = Vector2(120, 200)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D249" type="Sprite2D" parent="."]
+position = Vector2(136, 200)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D250" type="Sprite2D" parent="."]
+position = Vector2(152, 200)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D251" type="Sprite2D" parent="."]
+position = Vector2(168, 200)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D252" type="Sprite2D" parent="."]
+position = Vector2(184, 200)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D253" type="Sprite2D" parent="."]
+position = Vector2(200, 200)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D254" type="Sprite2D" parent="."]
+position = Vector2(216, 200)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D255" type="Sprite2D" parent="."]
+position = Vector2(232, 200)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D256" type="Sprite2D" parent="."]
+position = Vector2(248, 200)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D257" type="Sprite2D" parent="."]
+position = Vector2(264, 200)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D258" type="Sprite2D" parent="."]
+position = Vector2(280, 200)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D263" type="Sprite2D" parent="."]
+position = Vector2(40, 216)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D264" type="Sprite2D" parent="."]
+position = Vector2(56, 216)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D265" type="Sprite2D" parent="."]
+position = Vector2(72, 216)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D266" type="Sprite2D" parent="."]
+position = Vector2(88, 216)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D267" type="Sprite2D" parent="."]
+position = Vector2(104, 216)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D268" type="Sprite2D" parent="."]
+position = Vector2(120, 216)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D269" type="Sprite2D" parent="."]
+position = Vector2(136, 216)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D270" type="Sprite2D" parent="."]
+position = Vector2(152, 216)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D271" type="Sprite2D" parent="."]
+position = Vector2(168, 216)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D272" type="Sprite2D" parent="."]
+position = Vector2(184, 216)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D273" type="Sprite2D" parent="."]
+position = Vector2(200, 216)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D274" type="Sprite2D" parent="."]
+position = Vector2(216, 216)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D275" type="Sprite2D" parent="."]
+position = Vector2(232, 216)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D276" type="Sprite2D" parent="."]
+position = Vector2(248, 216)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D277" type="Sprite2D" parent="."]
+position = Vector2(264, 216)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D278" type="Sprite2D" parent="."]
+position = Vector2(280, 216)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D283" type="Sprite2D" parent="."]
+position = Vector2(40, 232)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D284" type="Sprite2D" parent="."]
+position = Vector2(56, 232)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D285" type="Sprite2D" parent="."]
+position = Vector2(72, 232)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D286" type="Sprite2D" parent="."]
+position = Vector2(88, 232)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D287" type="Sprite2D" parent="."]
+position = Vector2(104, 232)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D288" type="Sprite2D" parent="."]
+position = Vector2(120, 232)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D289" type="Sprite2D" parent="."]
+position = Vector2(136, 232)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D290" type="Sprite2D" parent="."]
+position = Vector2(152, 232)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D291" type="Sprite2D" parent="."]
+position = Vector2(168, 232)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D292" type="Sprite2D" parent="."]
+position = Vector2(184, 232)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D293" type="Sprite2D" parent="."]
+position = Vector2(200, 232)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D294" type="Sprite2D" parent="."]
+position = Vector2(216, 232)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D295" type="Sprite2D" parent="."]
+position = Vector2(232, 232)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D296" type="Sprite2D" parent="."]
+position = Vector2(248, 232)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D297" type="Sprite2D" parent="."]
+position = Vector2(264, 232)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D298" type="Sprite2D" parent="."]
+position = Vector2(280, 232)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D303" type="Sprite2D" parent="."]
+position = Vector2(40, 248)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D304" type="Sprite2D" parent="."]
+position = Vector2(56, 248)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D305" type="Sprite2D" parent="."]
+position = Vector2(72, 248)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D306" type="Sprite2D" parent="."]
+position = Vector2(88, 248)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D307" type="Sprite2D" parent="."]
+position = Vector2(104, 248)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D308" type="Sprite2D" parent="."]
+position = Vector2(120, 248)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D309" type="Sprite2D" parent="."]
+position = Vector2(136, 248)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D310" type="Sprite2D" parent="."]
+position = Vector2(152, 248)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D311" type="Sprite2D" parent="."]
+position = Vector2(168, 248)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D312" type="Sprite2D" parent="."]
+position = Vector2(184, 248)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D313" type="Sprite2D" parent="."]
+position = Vector2(200, 248)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D314" type="Sprite2D" parent="."]
+position = Vector2(216, 248)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D315" type="Sprite2D" parent="."]
+position = Vector2(232, 248)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D316" type="Sprite2D" parent="."]
+position = Vector2(248, 248)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D317" type="Sprite2D" parent="."]
+position = Vector2(264, 248)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4
+
+[node name="Sprite2D318" type="Sprite2D" parent="."]
+position = Vector2(280, 248)
+texture = ExtResource("1_qixh1")
+hframes = 5
+frame = 4

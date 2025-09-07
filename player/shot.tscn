@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://ndt65e1dvq2q"]
+
+[ext_resource type="Script" path="res://player/shot.gd" id="1_ipwy7"]
+[ext_resource type="Texture2D" uid="uid://bpfo3aursm4bl" path="res://player/shot.png" id="1_yxley"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2qhe2"]
+atlas = ExtResource("1_yxley")
+region = Rect2(0, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aj02u"]
+atlas = ExtResource("1_yxley")
+region = Rect2(8, 0, 8, 8)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7u7b4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2qhe2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aj02u")
+}],
+"loop": false,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="Shot" type="Node2D"]
+script = ExtResource("1_ipwy7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_7u7b4")
+autoplay = "default"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[node name="Node" type="Node" parent="."]
+
+[node name="RayCast2D" type="RayCast2D" parent="Node"]
+enabled = false
+collision_mask = 5
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,176 @@
+[gd_scene load_steps=14 format=3 uid="uid://djvma7pbm6m55"]
+
+[ext_resource type="Texture2D" uid="uid://b7omystmle63" path="res://player/player.png" id="1_cbhf7"]
+[ext_resource type="Script" path="res://player/player.gd" id="1_mvao7"]
+[ext_resource type="PackedScene" uid="uid://bus47w3yqlybl" path="res://hud/hud.tscn" id="2_iw21a"]
+[ext_resource type="Texture2D" uid="uid://dpypjjj3au4ea" path="res://player/shotgun.png" id="3_3ne6b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1s26d"]
+size = Vector2(10, 15)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_48q4q"]
+radius = 6.0
+height = 18.0
+
+[sub_resource type="Animation" id="Animation_muje2"]
+resource_name = "Fall"
+length = 0.2
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body/Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [8, 9]
+}
+
+[sub_resource type="Animation" id="Animation_6lreo"]
+resource_name = "Idle"
+length = 3.0
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body/Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="Animation" id="Animation_0sh2f"]
+resource_name = "Jump"
+length = 0.2
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body/Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_cmhvl"]
+resource_name = "Run"
+length = 0.4
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body/Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [3, 2, 5, 4]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_futko"]
+_data = {
+"Fall": SubResource("Animation_muje2"),
+"Idle": SubResource("Animation_6lreo"),
+"Jump": SubResource("Animation_0sh2f"),
+"Run": SubResource("Animation_cmhvl")
+}
+
+[sub_resource type="Animation" id="Animation_pxall"]
+resource_name = "Invis"
+length = 0.2
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Body:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bby3q"]
+_data = {
+"Invis": SubResource("Animation_pxall")
+}
+
+[node name="Player" type="CharacterBody2D"]
+texture_filter = 1
+collision_layer = 2
+script = ExtResource("1_mvao7")
+
+[node name="Body" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Body"]
+texture = ExtResource("1_cbhf7")
+offset = Vector2(0, -16)
+hframes = 10
+frame = 8
+
+[node name="Gun" type="Sprite2D" parent="Body"]
+visible = false
+position = Vector2(15, -7)
+texture = ExtResource("3_3ne6b")
+offset = Vector2(-8, 0)
+hframes = 2
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -7.5)
+shape = SubResource("RectangleShape2D_1s26d")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -9)
+shape = SubResource("CapsuleShape2D_48q4q")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_futko")
+}
+autoplay = "Idle"
+
+[node name="Hud" parent="." instance=ExtResource("2_iw21a")]
+
+[node name="CJTimer" type="Timer" parent="."]
+wait_time = 0.15
+one_shot = true
+
+[node name="PJTimer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_bby3q")
+}
+
+[node name="HurtTimer" type="Timer" parent="."]
+wait_time = 1.5
+one_shot = true
+
+[connection signal="timeout" from="HurtTimer" to="." method="_on_hurt_timer_timeout"]

@@ -1,0 +1,90 @@
+[gd_scene load_steps=9 format=3 uid="uid://dp37bot1rwtsa"]
+
+[ext_resource type="Script" path="res://lores/lore.gd" id="1_lbnua"]
+[ext_resource type="Texture2D" uid="uid://bxtuokglay4s3" path="res://lore/lore2.png" id="2_3cdki"]
+[ext_resource type="FontFile" uid="uid://ct55qup8ifk8j" path="res://fonts/scoreup.ttf" id="3_crw4a"]
+[ext_resource type="PackedScene" uid="uid://ppnbf8l018bo" path="res://hud/crom_ab.tscn" id="4_457or"]
+[ext_resource type="Texture2D" uid="uid://c3c8j027ftf3v" path="res://hud/frame.png" id="5_4esvu"]
+[ext_resource type="PackedScene" uid="uid://bbapvclxlokh5" path="res://sound_manager/music_caller.tscn" id="6_miuhi"]
+
+[sub_resource type="Animation" id="Animation_8snlb"]
+resource_name = "Display"
+length = 5.0
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 4.5, 5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 1.0, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(64, -112), Vector2(64, 32), Vector2(64, 32)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6rxou"]
+_data = {
+"Display": SubResource("Animation_8snlb")
+}
+
+[node name="Lore02" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_lbnua")
+chaneScene = "res://levels/level_13.tscn"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(64, -112)
+texture = ExtResource("2_3cdki")
+centered = false
+
+[node name="Label" type="Label" parent="."]
+offset_left = 64.0
+offset_top = 152.0
+offset_right = 256.0
+offset_bottom = 248.0
+theme_override_fonts/font = ExtResource("3_crw4a")
+theme_override_font_sizes/font_size = 5
+text = "I found the cave.
+
+It looks normal but something
+feels really wrong...
+
+\"PRESS JUMP TO CONTINUE\""
+horizontal_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="CromAb" parent="." instance=ExtResource("4_457or")]
+offset_left = 32.0
+offset_top = 16.0
+offset_right = 288.0
+offset_bottom = 256.0
+metadata/_edit_lock_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_6rxou")
+}
+autoplay = "Display"
+
+[node name="Frame" type="Sprite2D" parent="."]
+texture = ExtResource("5_4esvu")
+centered = false
+
+[node name="MusicCaller" parent="." instance=ExtResource("6_miuhi")]
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

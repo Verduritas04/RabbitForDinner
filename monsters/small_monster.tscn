@@ -1,0 +1,88 @@
+[gd_scene load_steps=9 format=3 uid="uid://dsrn3bwvymd6o"]
+
+[ext_resource type="AudioStream" uid="uid://cwutbjj5jxsmy" path="res://music/OldBrokenRadio.ogg" id="1_47inx"]
+[ext_resource type="Script" path="res://monsters/monster.gd" id="1_v8a8h"]
+[ext_resource type="Texture2D" uid="uid://1b2i8mh04xrr" path="res://monsters/small_monster.png" id="2_2mv4d"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qqorf"]
+radius = 104.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yn0we"]
+radius = 8.0
+
+[sub_resource type="Animation" id="Animation_svqe4"]
+resource_name = "Hurt"
+length = 0.3
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [Vector2(2.565, 1.215), Vector2(1, 1), Vector2(0.728, 1.813), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ksbam"]
+_data = {
+"Hurt": SubResource("Animation_svqe4")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vtnbr"]
+radius = 11.0
+
+[node name="SmallMonster" type="CharacterBody2D"]
+texture_filter = 1
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("1_v8a8h")
+
+[node name="DetectArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectArea"]
+shape = SubResource("CircleShape2D_qqorf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_2mv4d")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_47inx")
+volume_db = -80.0
+pitch_scale = 0.2
+autoplay = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_yn0we")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(-2.38419e-07, 1.43051e-06)
+scale = Vector2(1.6, 1.6)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ksbam")
+}
+
+[node name="PlayerKiller" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerKiller"]
+shape = SubResource("CircleShape2D_vtnbr")
+
+[connection signal="area_entered" from="DetectArea" to="." method="_on_detect_area_area_entered"]
+[connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="PlayerKiller" to="." method="_on_player_killer_body_entered"]
+[connection signal="body_exited" from="PlayerKiller" to="." method="_on_player_killer_body_exited"]

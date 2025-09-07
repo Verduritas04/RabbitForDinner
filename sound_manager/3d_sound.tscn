@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://omnd0nlytdrl"]
+
+[ext_resource type="Script" path="res://sound_manager/3d_sound.gd" id="1_g7xse"]
+
+[node name="3DSound" type="AudioStreamPlayer3D"]
+bus = &"Sfx"
+script = ExtResource("1_g7xse")
+
+[connection signal="finished" from="." to="." method="_on_finished"]
